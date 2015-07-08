@@ -7,7 +7,7 @@ To use it, install node and npm, then
 ```
 npm install
 npm dedupe
-open opendatapoitiers.xcodeproj # then click on return
+open opendatapoitiers.xcodeproj # then click on 'run' in Xcode 
 npm start
 ```
 
