@@ -44,7 +44,7 @@ export default React.createClass({
           Bike Shelters
         </Text>
         <Text style={styles.welcomeLittle}>
-          with Poitiers opendata 
+          with Poitiers opendata
         </Text>
         <Text style={styles.instructions} onPress={this.gotoSerli}>
           by #TeamSerli
