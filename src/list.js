@@ -136,7 +136,7 @@ const ShelterList = React.createClass({
       component: ShelterMap,
       passProps: {
         longitude: item.location[0],
-        title: `${item.address}`,
+        title: `${item.address.replace(', 86000 Poitiers, France', '')}`,
         subTitle: `${item.type} pour ${item.capacity}`,
         latitude: item.location[1]
       }
@@ -164,7 +164,7 @@ const ShelterList = React.createClass({
           <View style={styles.row}>
             <Image style={styles.thumb} source={source} />
             <Text style={styles.text} numberOfLines={3}>
-              {item.address}
+              {item.address.replace(', 86000 Poitiers, France', '')}
               {'\n\n'}
               <Text style={{ fontSize: 10 }}>{item.type} pour {item.capacity} vélos</Text>
             </Text>

@@ -74,7 +74,7 @@ export default React.createClass({
         animateDrop: true,
         latitude: shelter.location[1],
         longitude: shelter.location[0],
-        title: shelter.address,
+        title: shelter.address.replace(', 86000 Poitiers, France', ''),
         subtitle: `${shelter.type} pour ${shelter.capacity}`,
         hasRightCallout: true,
         onRightCalloutPress: () => {
