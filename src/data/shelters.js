@@ -6,7 +6,7 @@ const { NetInfo } = React
 var cached = undefined;
 let error = false;
 let loaded = false;
-let devMode = true;
+let devMode = false;
 
 exports.errors = function() {
   return error;
