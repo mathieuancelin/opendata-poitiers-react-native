@@ -8,6 +8,7 @@ const {
   ActivityIndicatorIOS
 } = React;
 
+const Button = require('./components/button');
 const ShelterList = require('./list');
 const About = require('./about');
 const Map = require('./map');
@@ -46,9 +47,7 @@ const opendatapoitiers = React.createClass({
           <Text style={styles.welcome}>
             Error while loading bike shelters :(
           </Text>
-          <View onPress={this.tryToPrefetch} style={{ borderColor: 'black', borderRadius: 4, borderStyle: 'solid', borderWidth: 1, padding: 15, marginTop: 20 }}>
-            <Text onPress={this.tryToPrefetch}>Retry now</Text>
-          </View>
+          <Button action={this.tryToPrefetch} style={{marginTop: 20}}>Retry now</Button>
         </View>
       );
     }

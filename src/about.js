@@ -1,7 +1,6 @@
 const React = require('react-native');
 
 const {
-  AppRegistry,
   StyleSheet,
   Text,
   View,

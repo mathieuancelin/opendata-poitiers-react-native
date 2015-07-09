@@ -45,7 +45,7 @@ exports.nearMe = function(latitude, longitude) {
   NetInfo.isConnected.fetch().then(connected => {
     if (connected) {
       console.log('Fetching near me ...')
-      fetch(`https://open-data-poitiers.herokuapp.com/bike-shelters/find?lat=${latitude}&lon=${longitude}`)
+      fetch(`https://open-data-poitiers.herokuapp.com/bike-shelters/find?lat=${latitude.replace('.', ',')}&lon=${longitude.replace('.', ',')}`)
         .then(r => r.json())
         .then(r => {
           try {
