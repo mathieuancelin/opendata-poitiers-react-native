@@ -11,7 +11,7 @@ open opendatapoitiers.xcodeproj # then click on 'run' in Xcode
 npm start
 ```
 
-If you don't want to install node and just try the app, just uncomment
+If you don't want to run the dev server and just try the app, uncomment the following line after `npm install`
 
 https://github.com/mathieuancelin/opendata-poitiers-react-native/blob/master/iOS/AppDelegate.m#L46
 
