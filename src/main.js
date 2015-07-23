@@ -15,6 +15,10 @@ const Map = require('./map');
 const NearMe = require('./nearme');
 const Shelters = require('./data/shelters');
 
+const map8 = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/map-8.imageset/map-8.png' };//require('image!map-8');
+const search256 = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/search-256.imageset/search-256.png' };//require('image!search-256');
+const imgList = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/list.imageset/list.png' };//require('image!list');
+
 const opendatapoitiers = React.createClass({
   getInitialState() {
     return {
@@ -70,7 +74,7 @@ const opendatapoitiers = React.createClass({
         tintColor="white"
         barTintColor="black">
         <TabBarIOS.Item
-          icon={require('image!map-8')}
+          icon={map8}
           title="Map"
           selected={this.state.selectedTab === 'map'}
           onPress={() => { this.setState({ selectedTab: 'map' }); }}>
@@ -78,14 +82,14 @@ const opendatapoitiers = React.createClass({
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title="Near me"
-          icon={require('image!search-256')}
+          icon={search256}
           selected={this.state.selectedTab === 'nexttome'}
           onPress={() => { this.setState({ selectedTab: 'nexttome' }); }}>
             <NearMe />
         </TabBarIOS.Item>
         <TabBarIOS.Item
         title="All"
-          icon={require('image!list')}
+          icon={imgList}
           selected={this.state.selectedTab === 'list'}
           onPress={() => { this.setState({ selectedTab: 'list' }); }}>
             <ShelterList />
