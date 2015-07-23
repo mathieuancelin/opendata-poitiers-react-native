@@ -15,7 +15,7 @@ const {
 
 const Shelters = require('./data/shelters');
 const SinglePointMap = require('./components/singlepointmap');
-const source = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/bicycle.imageset/bicycle.png' };//require('image!bicycle.png');
+const source = require('image!bicycle.png');//{ uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/bicycle.imageset/bicycle.png' };
 
 const styles = StyleSheet.create({
   stack: {

@@ -15,9 +15,9 @@ const Map = require('./map');
 const NearMe = require('./nearme');
 const Shelters = require('./data/shelters');
 
-const map8 = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/map-8.imageset/map-8.png' };//require('image!map-8');
-const search256 = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/search-256.imageset/search-256.png' };//require('image!search-256');
-const imgList = { uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/list.imageset/list.png' };//require('image!list');
+const map8 = require('image!map-8');//{ uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/map-8.imageset/map-8.png' };
+const search256 = require('image!search-256');//{ uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/search-256.imageset/search-256.png' };
+const imgList = require('image!list');//{ uri: 'https://raw.githubusercontent.com/mathieuancelin/opendata-poitiers-react-native/master/iOS/Images.xcassets/list.imageset/list.png' };
 
 const opendatapoitiers = React.createClass({
   getInitialState() {
